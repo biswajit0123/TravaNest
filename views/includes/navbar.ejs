@@ -1,0 +1,71 @@
+<style>
+  .c{
+    /* background-color: yellowgreen !important; */
+    z-index: 1000;
+    background-color: white !important;
+    padding: 1rem;
+  }
+.c .searchbar{
+  display: flex;
+
+}
+.c input{
+  border: none;
+  outline: none;
+}
+.searchbar{
+  display: flex;
+  align-items: center;
+  border: 1px solid black;
+  padding: .4rem;
+  border-radius: 1rem;
+  position: relative;
+}
+.searchbar a{
+  position: absolute;
+  right: 1rem;
+}
+.sicon{
+  color: white;
+  border: 1px solid red;
+  padding: 4px;
+  background-color: red;
+  border-radius: 10rem;
+}
+
+</style>
+<nav class="navbar navbar-expand-md bg-body-light border-bottom">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/listings"><i class="fa-regular fa-compass"></i> TravaNest</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      
+      <div class="collapse navbar-collapse c" id="navbarNavAltMarkup">
+
+        <div class="navbar-nav">
+
+          <a class="nav-link" href="/listings">Explore</a>
+          <a class="nav-link" href="/listings/new">Airbnb your home</a>
+        </div>
+       <div class="searchbar navbar-nav ms-auto">
+        <input type="text" placeholder="Search destination" >
+        <a href="/k"> <i class="fa-solid fa-magnifying-glass sicon"></i></a>
+       </div>
+
+         <div class="navbar-nav ms-auto ">
+            <% if (!currentUser) { %>
+          <a class="nav-link me-2 " style="border: 1px solid black; border-radius: 1rem;" href="/signup"><b>Signup</b></a>
+          <a class="me-2 nav-link" href="/login" style="border: 1px solid black; border-radius: 1rem;" ><b>login</b></a>
+          <% }%>
+
+          <% if (currentUser) { %>
+          <a class="me-2 nav-link" href="/logout" style="border: 1px solid black; border-radius: 1rem;"  ><b>logout</b></a>
+                  <% }%>
+          </div>
+
+
+
+      </div>
+    </div>
+  </nav>
