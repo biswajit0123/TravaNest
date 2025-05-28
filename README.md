@@ -35,23 +35,7 @@ https://travanest.onrender.com/listings
 - Node
 
 
-## 📂 Project Structure
 
-TravaNest/
-│
-├── backend/
-│ ├── controllers/
-│ ├── models/
-│ ├── routes/
-│ ├── views/
-│ ├── cloudconfig.js
-│ └── app.js
-├── public/
-│ ├── css/
-│ └── js/
-├── .env
-├── package.json
-└── README.md
 
 
 ## 📦 Installation & Usage
