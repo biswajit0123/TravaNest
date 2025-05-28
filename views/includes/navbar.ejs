@@ -1,39 +1,4 @@
-<style>
-  .c{
-    /* background-color: yellowgreen !important; */
-    z-index: 1000;
-    background-color: white !important;
-    padding: 1rem;
-  }
-.c .searchbar{
-  display: flex;
 
-}
-.c input{
-  border: none;
-  outline: none;
-}
-.searchbar{
-  display: flex;
-  align-items: center;
-  border: 1px solid black;
-  padding: .4rem;
-  border-radius: 1rem;
-  position: relative;
-}
-.searchbar a{
-  position: absolute;
-  right: 1rem;
-}
-.sicon{
-  color: white;
-  border: 1px solid red;
-  padding: 4px;
-  background-color: rgb(26, 255, 0);
-  border-radius: 10rem;
-}
-
-</style>
 <nav class="navbar navbar-expand-md bg-body-light border-bottom">
     <div class="container-fluid">
       <a class="navbar-brand" href="/listings"><i class="fa-regular fa-compass"></i> TravaNest</a>
@@ -41,13 +6,13 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       
-      <div class="collapse navbar-collapse c" id="navbarNavAltMarkup">
+      <div class="collapse navbar-collapse colapse-whole-navelem" id="navbarNavAltMarkup">
 
         <div class="navbar-nav">
-
           <a class="nav-link" href="/listings">Explore</a>
           <a class="nav-link" href="/listings/new">Airbnb your home</a>
         </div>
+        
        <div class="searchbar navbar-nav ms-auto">
         <input type="text" placeholder="Search destination" >
         <a href="/k"> <i class="fa-solid fa-magnifying-glass sicon"></i></a>
