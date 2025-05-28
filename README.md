@@ -1,6 +1,6 @@
 # TravaNest 🧭
 
-**TravaNest** is a full-stack MERN application inspired by Airbnb, allowing users to list, browse, and book unique stays and experiences around the world.
+**TravaNest** is a full-stack web app application inspired by Airbnb, allow user to airbnb thei home as a listing and review for each listing is also posted by different users
 
 ## 🌐 Live Demo
 https://travanest.onrender.com/listings
