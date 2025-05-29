@@ -89,7 +89,9 @@ app.use((req, res, next) =>{
 app.use('/listings', listingRouter)
 app.use('/listings/:id/review', reviewRouter)
 app.use('/',userRouter)
-
+app.use('/k', (req, res)=>{
+    res.send("not implemented yet")
+})
 
 app.all(/.*/,(req,res,next) =>{
     console.log("Page not found yes")

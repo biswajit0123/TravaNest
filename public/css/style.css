@@ -57,13 +57,26 @@ font-size: 1.5rem !important;
   background-color: rgb(209, 33, 24);
   border-radius: 10rem;
 }
-@media(max-width: 768px){
-   .searchbar{
-    border: none;
-    margin: 0;
-    background-color: yellowgreen;
-   }
+.signupbtn{
+  border: 1px solid black;
+  border-radius: 1rem;
 }
+@media(max-width: 768px){
+  .sicon{
+  color: rgb(18, 17, 17);
+  border: none;
+  padding: 4px;
+  background-color: white;
+}
+.searchbar{
+  border: none;
+  padding: .4rem;
+}
+.signupbtn{
+  border: none;
+}
+   }
+
 
 /* footer */
 .foot-info{
@@ -215,7 +228,7 @@ width: 100%;
 }
 .review-container{
     overflow: scroll;
-    height: 100vh;
+  
 }
 
 /* map */
@@ -275,5 +288,18 @@ flex-wrap: wrap;
 
 .below-nav{
   justify-content: center;
+}
+}
+
+/* user login sign up */
+
+@media(max-width: 768px){
+.signup-container{
+width: 100% !important;
+margin: auto !important;
+}
+.signin-container{
+width: 100% !important;
+margin: auto !important;
 }
 }

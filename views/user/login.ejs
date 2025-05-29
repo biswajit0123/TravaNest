@@ -1,10 +1,10 @@
 <% layout('layout/boilerplate') -%>
 
 
-<div class="row offset-3 " >
+<div class="row offset-md-3 offset-1 signin-container " >
 
-    <div class="col-8">
-        <h4 style="text-align: center;">login ur account</h4>
+    <div class="col-md-8 col-12">
+        <h4 style="text-align: center;">login your account</h4>
         <form action="/login" method="post" class="needs-validation" novalidate>  
   <div class="mt-3">
     <label for="username" class="form-label">Username</label>
@@ -18,7 +18,7 @@
      <div class="invalid-feedback">shouldn't be empty    </div>
   </div>
 
-  <button  class="btn btn-success mt-3">login </button>
+  <button  class="btn btn-success mt-3">Log in </button>
 
   <p class="mt-3">don't have an account? <a href="/signup">Register</a> </p>
 </form>
